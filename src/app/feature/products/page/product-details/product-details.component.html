@@ -1,0 +1,17 @@
+
+    <div *ngIf="product$ | async as product" class="product-details row">
+      <div class="col-lg-6 col-md-6 col-sm-12 col-12 d-flex justify-content-center align-item-center">
+        <img src="{{product.image}}" alt="{{product.title}}" class="product-image" >
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+        <p class="product-category">Category: {{product.category | uppercase}}</p>
+        <h3 class="product-title">{{product.title}}</h3>
+        <p class="product-price">{{product.price | currency}}</p>
+        <p class="product-rating">Rating: {{product.rating.rate}} <i class="fa-solid fa-star rating-icon"></i></p>
+        <p class="product-description">{{product.description}}</p>
+        <button class="addToCart-btn mt-5" (click)="addToCart(product)">Add to Cart</button>
+      </div>
+    </div>
+
+
+

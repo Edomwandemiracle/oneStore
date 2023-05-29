@@ -1,0 +1,114 @@
+.navigation-bar {
+  margin: 0 auto;
+  max-width: 1440px;
+  background: #fff;
+  padding: 0 3.25rem;
+  .navigation-bar-header-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    background: #fcfcfc;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    .cart-icon {
+      height: 3.3125rem;
+      margin-right: 1.125rem;
+    }
+
+    .cart-number-container {
+      position: absolute;
+      height: 40px;
+      width: 40px;
+      color: #fff;
+      top: 21px;
+      right: 43px;
+      background: #000;
+      border-radius: 100%;
+      -webkit-border-radius: 100%;
+      -moz-border-radius: 100%;
+      -ms-border-radius: 100%;
+      -o-border-radius: 100%;
+
+      .cart-number {
+        text-align: center;
+        margin-top: 0.5rem;
+        font-size: 1.25rem;
+      }
+    }
+    .cart-items-container {
+      position: absolute;
+      width: 350px;
+      right: 0;
+      z-index: 1000;
+      top: 118px;
+      right: 2%;
+      background: #fff;
+      box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 10);
+      padding: 38px 30px;
+    }
+    .fadeIn {
+      top: 108px;
+      transition: all 0.5s ease;
+      opacity: 1;
+      z-index: 1000;
+      display: block;
+    }
+  }
+}
+
+.add-bag-btn {
+  width: 100%;
+  background: #000;
+  color: #fff;
+  border-radius: 10px;
+  height: 40px;
+  border: none;
+}
+
+.shopping-cart .title-container {
+  display: flex;
+  justify-content: space-between;
+}
+.shopping-cart div {
+  width: 100%;
+}
+
+.shopping-cart .title-container .title {
+  color: #171717;
+  font-size: 16px;
+  font-weight: 700;
+  height: 19px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  flex: 0 0 70%;
+  font-weight: 700;
+}
+.product-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.product-image {
+  background: #fff;
+  height: 90px;
+}
+
+@media only screen and (max-width: 600px) {
+  .navigation-bar-logo {
+    width: 145px;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  .navigation-bar {
+    .navigation-bar-header-container {
+      .cart-number-container {
+        right: 610px;
+      }
+      .cart-items-container {
+        right: 25%;
+      }
+    }
+  }
+}

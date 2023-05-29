@@ -1,0 +1,28 @@
+.footer_container {
+  background: #000;
+}
+.footer_menu {
+  width: 840px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto 60px;
+  color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+  .payment-img {
+    width: 100%;
+  }
+  .footer_menu {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 15px;
+    margin-top: 15px;
+    color: #fff;
+  }
+
+  .demo_footer-logo {
+    width: 100%;
+  }
+}

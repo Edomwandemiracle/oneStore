@@ -1,0 +1,21 @@
+<div class="homeContainer">
+  <div class="productsContainer row">
+    <div class="products col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 my-3" *ngFor="let product of products">
+      <div class="product">
+        <a class="product-link" [routerLink]="['/products/product', product.id]">
+        <div class="productImage">
+          <img src="{{product.image}}" alt="{{product.title}}" />
+        </div>
+        <div class="productDetails">
+          <h5 class="productName">{{product.title | truncate }}</h5>
+          <p class="description">{{product.description}}</p>
+          <div class="price">
+            <span class="product-price">{{product.price | currency}}</span>
+            <button class="more-btn" >More</button>
+          </div>
+        </div>
+      </a>
+      </div>
+    </div>
+  </div>
+</div>
