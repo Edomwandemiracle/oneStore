@@ -26,7 +26,7 @@ describe('Service: Product', () => {
     httpTestingController.verify();
   });
 
-  it('should ...', inject([ProductService], (service: ProductService) => {
+  it('should have an instance of product service', inject([ProductService], (service: ProductService) => {
     expect(service).toBeTruthy();
   }));
 
